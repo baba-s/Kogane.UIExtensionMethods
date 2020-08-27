@@ -300,6 +300,22 @@ var bottom = rectTransform.GetAnchoredPositionBottom();
 var edge   = rectTransform.GetAnchoredEdge();
 ```
 
+## ScrollRect
+
+```cs
+// スクロール座標を上端にリセットします
+m_scrollRect.ResetScrollPositionToTop();
+
+// スクロール座標を下端にリセットします
+m_scrollRect.ResetScrollPositionToBottom();
+
+// スクロール座標を左端にリセットします
+m_scrollRect.ResetScrollPositionToLeft();
+
+// スクロール座標を右端にリセットします
+m_scrollRect.ResetScrollPositionToRight();
+```
+
 ## Slider
 
 ```cs
