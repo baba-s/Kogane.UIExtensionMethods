@@ -321,3 +321,89 @@ slider.onValueChanged.Remove( OnChange );
 // onValueChanged.SetListener の省略表記
 slider.onValueChanged.Set( OnChange );
 ```
+
+## TMP_InputField
+
+```cs
+var tmpInputField = GetComponent<TMP_InputField>();
+
+void OnEndEdit( string s )
+{
+}
+
+// onEndEdit イベントを上書き
+tmpInputField.onEndEdit.SetListener( OnEndEdit );
+
+// onEndEdit.AddListener の省略表記
+tmpInputField.onEndEdit.Add( OnEndEdit );
+
+// onEndEdit.RemoveListener の省略表記
+tmpInputField.onEndEdit.Remove( OnEndEdit );
+
+// onEndEdit.SetListener の省略表記
+tmpInputField.onEndEdit.Set( OnEndEdit );
+
+void OnChange( string s )
+{
+}
+
+// onValueChanged イベントを上書き
+tmpInputField.onValueChanged.SetListener( OnChange );
+
+// onValueChanged.AddListener の省略表記
+tmpInputField.onValueChanged.Add( OnChange );
+
+// onValueChanged.RemoveListener の省略表記
+tmpInputField.onValueChanged.Remove( OnChange );
+
+// onValueChanged.SetListener の省略表記
+tmpInputField.onValueChanged.Set( OnChange );
+
+void OnSelect( string s )
+{
+}
+
+// onSelect イベントを上書き
+tmpInputField.onSelect.SetListener( OnSelect );
+
+// onSelect.AddListener の省略表記
+tmpInputField.onSelect.Add( OnSelect );
+
+// onSelect.RemoveListener の省略表記
+tmpInputField.onSelect.Remove( OnSelect );
+
+// onSelect.SetListener の省略表記
+tmpInputField.onSelect.Set( OnSelect );
+
+void OnTextSelection( string s, int i1, int i2 )
+{
+}
+
+// onTextSelection イベントを上書き
+tmpInputField.onTextSelection.SetListener( OnTextSelection );
+
+// onTextSelection.AddListener の省略表記
+tmpInputField.onTextSelection.Add( OnTextSelection );
+
+// onTextSelection.RemoveListener の省略表記
+tmpInputField.onTextSelection.Remove( OnTextSelection );
+
+// onTextSelection.SetListener の省略表記
+tmpInputField.onTextSelection.Set( OnTextSelection );
+
+void OnTouchScreenKeyboardStatusChanged( TouchScreenKeyboard.Status status )
+{
+}
+
+// onTouchScreenKeyboardStatusChanged イベントを上書き
+tmpInputField.onTouchScreenKeyboardStatusChanged.SetListener( OnTouchScreenKeyboardStatusChanged );
+
+// onTouchScreenKeyboardStatusChanged.AddListener の省略表記
+tmpInputField.onTouchScreenKeyboardStatusChanged.Add( OnTouchScreenKeyboardStatusChanged );
+
+// onTouchScreenKeyboardStatusChanged.RemoveListener の省略表記
+tmpInputField.onTouchScreenKeyboardStatusChanged.Remove( OnTouchScreenKeyboardStatusChanged );
+
+// onTouchScreenKeyboardStatusChanged.SetListener の省略表記
+tmpInputField.onTouchScreenKeyboardStatusChanged.Set( OnTouchScreenKeyboardStatusChanged );
+```
