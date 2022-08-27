@@ -1,4 +1,4 @@
-# UniUIExtensionMethods
+# Kogane UI Extension Methods
 
 UI 関連の拡張メソッド
 
