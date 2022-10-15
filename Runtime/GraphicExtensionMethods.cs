@@ -146,7 +146,7 @@ namespace Kogane
             float        a
         )
         {
-            self.color = new Color( r, g, b, a );
+            self.color = new( r, g, b, a );
         }
 
         /// <summary>
@@ -169,7 +169,7 @@ namespace Kogane
         /// </summary>
         public static void SetColor( this Graphic self, float r, float g, float b )
         {
-            self.color = new Color( r, g, b, self.color.a );
+            self.color = new( r, g, b, self.color.a );
         }
 
         /// <summary>
