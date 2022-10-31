@@ -191,5 +191,18 @@ namespace Kogane
         {
             self.SetListener( call );
         }
+
+        /// <summary>
+        /// 入力された文字列をマスクするかどうかを設定します
+        /// </summary>
+        public static void SetIsMask( this TMP_InputField self, bool isMask )
+        {
+            self.contentType = isMask
+                    ? TMP_InputField.ContentType.Password
+                    : TMP_InputField.ContentType.Standard
+                ;
+
+            self.ForceLabelUpdate();
+        }
     }
 }
